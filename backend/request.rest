@@ -1,0 +1,47 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/1
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Mouse Logitec",
+    "price": 897
+}
+
+###
+
+PATCH  http://localhost:5000/products/4
+Content-Type: application/json
+
+{
+    "name": "Mouse Logitec Macro",
+    "price": 995
+}
+
+###
+
+
+DELETE http://localhost:5000/products/3
+
+###
+
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Mio Mirza",
+    "price": 999999
+}
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Streamer Mirza",
+    "price": 100000000
+}
